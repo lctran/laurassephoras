@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> subpage1 - View/Enter Products </title>
+	<link rel="stylesheet" type="text/css" href="destinations.css">
+	<link rel="stylesheet" type="text/css" href="fprev2.css">
+
+	<!-- bootstrap cdn -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<h1>CS 340 Draft</h1>
+			<h2>web design by Laura</h2>
+		</header>
+
+		<nav>
+			<ul class="mainMenu"> <!--unorder bullet list-->
+				<li><a href="step3c.html">home</a></li>
+				<li><a href="p1.html">Products</a></li>
+				<li><a href="p2.html">subpage2</a></li>
+				<li><a href="p3.html">subpage3</a></li>
+			</ul>
+		</nav>
+
+		<p>This page displays 4 out of 5 of my diagrams. It will give option insert data to tables as show below. For the list of all products, I have it under "Search Tab".</p><br>
+
+		<br>
+		<p id="headerText">Color: <p>
+		<table class "pizza-table">
+
+
+			<form>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Email</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">Password</label>
+      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress">Address</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+  </div>
+  <div class="form-group">
+    <label for="inputAddress2">Address 2</label>
+    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputCity">City</label>
+      <input type="text" class="form-control" id="inputCity">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputState">State</label>
+      <select id="inputState" class="form-control">
+        <option selected>Choose...</option>
+        <option>...</option>
+      </select>
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputZip">Zip</label>
+      <input type="text" class="form-control" id="inputZip">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        Check me out
+      </label>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Sign in</button>
+</form>
+
+
+		    <tr class="table-title">
+		        <th>Shade</th>
+		        <th>Color_Code</th>
+		    </tr>
+		    <tr class="table-contents">
+		        <td>Mochal Brown</td>
+		        <td>9B7F7C</td>
+		    </tr>
+		    <tr class="table-contents">
+		        <td>{{shade}}</td>		
+		        <td>{{color code}}</td>
+		    </tr>
+		</table>
+		<br><p id="headerText">Insert a new color availability:	<p>
+		<form action="insert.php" method="post">
+            Shade: <input type="text" name="shade">
+            <br>
+            Color_Code: <input type="text" name="hexColor">
+            <br>
+            <input type="submit" value="Insert">
+        </form>
+
+
+
+        <br><br>
+		<p id="headerText">Applicator: <p>
+		<table class "Applicator_table">
+		    <tr class="table-title">
+		        <th>ID</th>
+		        <th>Tool</th>
+		    </tr>
+		    <tr class="table-contents">
+		        <td>1</td>
+		        <td>Beauty Blender</td>
+		    </tr>
+		    <tr class="table-contents">
+		        <td>{{id}}</td>		
+		        <td>{{tool}}</td>
+		    </tr>
+		</table>
+		<br><p id="headerText">Insert new applicator:</p>
+		<form id="addApplicator" action="funcInsertApplicator()" method="update">
+		    <span>Tool: </span>
+		    <input name="Tool" type="text">
+		    <br>
+		    <input type="submit" value="Insert">
+		</form>
+
+		<br><br><p id="headerText">Makeup_Finish: <p>
+		<table class "MakeupFinish-table">
+		    <tr class="table-title">
+		        <th>ID</th>
+		        <th>Finish</th>
+		    </tr>
+		    <tr class="table-contents">
+		        <td>1</td>
+		        <td>matte</td>
+		    </tr>
+		    <tr class="table-contents">
+		        <td>{{ID}}</td>		
+		        <td>{{finish}}</td>
+		    </tr>
+		</table>
+		<br><p id="headerText">Insert a new Makeup Finish availability:	<p>
+		<form action="insert.php" method="post">
+            Makeup Finish: <input type="text" name="finish">
+            <br>
+            <input type="submit" value="Insert">
+        </form>
+
+		<br><br><p id="headerText">Makeup_Type: <p>
+		<table class "MakeupType-table">
+		    <tr class="table-title">
+		        <th>ID</th>
+		        <th>Intended Facial Feature</th>
+		        <th>Formulation</th>
+		        <th>MakeupFinish_ID</th>
+		    </tr>
+		    <tr class="table-contents">
+		        <td>1</td>
+		        <td>eyes</td>
+		        <td>gel</td>
+		        <td>1 (e.g. Matte)</td>
+		    </tr>
+		    <tr class="table-contents">
+		        <td>{{ID}}</td>		
+		        <td>{{Intended Facial Feature}}</td>
+		       	<td>{{Formulation}}</td>
+		        <td>{{1 (e.g. Matte)}}</td>
+		    </tr>
+		</table>
+		<br><p id="headerText">Insert a new Makeup Finish availability:	<p>
+		<form action="insert.php" method="post">
+			Intended Facial Feature: <input type="integer" name="finish"><br>
+			Formulation: <input type="integer" name="finish"><br>
+            Makeup Finish: <input type="integer" name="finish"><br>
+            <input type="submit" value="Insert">
+        </form>
+
+	</div>
+
+
+
+</body>
+</html>
+

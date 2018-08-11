@@ -1,0 +1,96 @@
+/********* homepage nav bar***************************************************/
+/*****************************************************************************/
+body{
+	background-color: #f3f3f3 !important;
+}
+
+#wrapper{
+
+	max-width: 960px !important;
+	margin: 0 auto !important;
+	background-color: #fff !important;
+	padding: 32px !important;
+}
+
+header{
+	background-color: #e0e0e0 !important;
+	height: 150px !important;
+	padding: 4px !important;
+}
+
+header h1{
+	text-transform: uppercase !important;
+	text-align: center !important;
+	color: #fff !important;
+	line-height: 50px !important;
+}
+
+header h2{
+	font-variant: small-caps !important;
+	text-align: center !important;
+	color: white !important;
+}
+
+.mainMenu {
+	padding: 5px 0 5px 0 !important;
+	text-align: center !important;
+	line-height: 32px !important;	/* spacing between links/subpage */
+	background-color: #818181 !important;
+}
+
+ul.mainMenu{
+	margin-top: 15px !important;
+}
+
+.mainMenu li{
+	display: inline !important; /* display horizontal header bar, also gets rid of bullet */
+	padding: 0 10px 0 10px !important;
+	font-size: 21px !important;
+}
+
+.mainMenu a{
+	text-decoration: none !important; /* no link underline */
+	color: #fff !important;
+	padding: 8px !important;
+	font-variant: small-caps !important;
+}
+
+.mainMenu a:hover{
+	color: #59d5d8 !important;
+}
+
+
+/* style link */
+.media{
+	margin: 0 0 0 150px !important;
+	padding: 10px 0 5px 30px !important;
+}
+div>h5>a{
+	text-decoration: none !important;
+	font-size: 30px !important;
+	font-variant: small-caps !important;
+	padding-bottom: 20px !important;
+	color: grey !important;
+}
+div>h5>a:hover{
+	color: pink !important;
+}
+/*
+.badge{
+	margin: 0 0 0 150px !important;
+	padding: 10px 0 5px 30px !important;
+}
+
+.socialMedia-Item a{
+	text-decoration: none !important;
+	font-size: 30px !important;
+	font-variant: small-caps !important;
+	padding-bottom: 20px !important;
+	color: grey !important;
+}
+
+
+.socialMedia-Item a:hover{
+	color: pink !important;
+}
+*/

@@ -1,0 +1,72 @@
+<!-- Covered Requirements -->
+<!-- 5. unordered HTML list,
+	6. button to download file -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title> subpage2- travel tips</title>
+	<link rel="stylesheet" type="text/css" href="traveltips.css">
+	<link rel="stylesheet" type="text/css" href="fprev2.css">
+
+	<!-- bootstrap cdn -->
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<h1>CS 340 Draft</h1>
+			<h2>web design by Laura</h2>
+		</header>
+
+		<nav>
+			<ul class="mainMenu"> <!--unorder bullet list-->
+				<li><a href="step3c.html">home</a></li>
+				<li><a href="p1.html">Products</a></li>
+				<li><a href="p2.html">Insert/Delete</a></li>
+				<li><a href="p3.html">Search</a></li>
+			</ul>
+		</nav>
+
+		<p>This page is for updating and deleting entries or tables.</p><br>
+       	<p id="headerText">Delete or Update a product from Makeup_Product table:</p>
+        <table class "MakeupProduct-table">
+        	<tr class="table-title">
+            	<th>ID</th>
+            	<th>Name</th>
+            	<th>Brand</th>
+            	<th>Cost</th>
+            	<th>Lifespan</th>
+            	<th>Color ID</th>
+            	<th>Makeup_Type ID</th>
+        	</tr>
+        <tr class="table-contents">
+            <td>{{automated count}}</td>
+            <td>{{Name}}</td>
+            <td>{{Brand}}</td>
+            <td>{{Cost}}</td>
+            <td>{{Lifespan}}</td>
+            <td>{{Color ID}}</td>
+            <td>{{Makeup_Type ID}}</td>
+            <td>
+                <button onclick="deletestore({{id}})">Delete</button>
+            </td>
+            <td>
+                <a href="/store/{{id}}">Update</a>
+            </td>
+        </tr>
+	</div>
+
+
+
+
+</body>
+</html>

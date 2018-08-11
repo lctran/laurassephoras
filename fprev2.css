@@ -1,0 +1,146 @@
+/*https://www.youtube.com/watch?v=nJWq74MHplc&t=0s&index=3&list=PLBJ21p7vXUWya8tqJuJrSiZ0aFHokgr7V*/
+
+/* . references a class */
+.carouselContainer{
+	width: 80%;
+	position: relative;
+	/*margin: auto;	/* centered */
+
+	margin: 0 auto !important;
+	font-family: verdana, sans-serif;
+}
+
+.carouselImage{
+	display: none; /* hides image */
+}
+
+.imageNumber{
+	position: absolute; /* hover over image */
+	padding: 8px 12px; /* top padding, left padding relatively */
+	color: white;
+}
+
+.caption{
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	position: absolute;
+	width: 100%;
+	/* padding: 8px 16px;*/
+	bottom: 20px; 
+	color: white;
+}
+
+.left, .right{
+	position: absolute;
+	top: 50%;
+	color: white !important;
+	font-weight: bold;
+	padding: 10px;
+	font-size: 50px;
+	cursor: pointer;
+}
+
+.left{
+	border-radius: 0 30px 30px 0;
+}
+
+.right{
+	border-radius: 30px 0 0 30px;
+	right: 0;
+}
+
+.left:hover, .right:hover{
+	background: rgba(0,0,0,0.5);
+}
+
+
+.dot{
+	width: 13px;
+	height: 13px;
+	display: inline-block; /*display the dots, should be default*/
+	border-radius: 50%;
+	background: grey;
+}
+
+.imageFade{
+	animation-name: fade;
+	animation-duration: 3s;
+}
+
+@keyframes imageFade{
+	from{opacity: 4}
+	to{opacity:1}
+}
+
+.active, .dot:hover{
+	background: #333;
+}
+
+
+
+
+
+
+/********* homepage nav bar***************************************************/
+/*****************************************************************************/
+body{
+	background-color: #f3f3f3 !important;
+}
+
+#wrapper{
+
+	max-width: 1000px !important;
+	margin: 0 auto !important;
+	margin-bottom: 10px !important;
+	background-color: #fff !important;
+	padding: 32px !important;
+}
+
+header{
+	background-color: #e0e0e0 !important;
+	height: 150px !important;
+	padding: 9px !important;
+}
+
+header h1{
+	text-transform: uppercase !important;
+	text-align: center !important;
+	color: #fff !important;
+	line-height: 50px !important;
+	font-size: 9vw !important; /*scaling*/
+}
+
+header h2{
+	font-variant: small-caps !important;
+	text-align: center !important;
+	color: white !important;
+}
+
+.mainMenu {
+	padding: 5px 0 5px 0 !important;
+	text-align: center !important;
+	line-height: 32px !important;	/* spacing between links/subpage */
+	background-color: #818181 !important;
+}
+
+ul.mainMenu{
+	margin-top: 15px !important;
+}
+
+.mainMenu li{
+	display: inline !important; /* display horizontal header bar, also gets rid of bullet */
+	padding: 0 10px 0 10px !important;
+	font-size: 27px !important;
+}
+
+.mainMenu a{
+	text-decoration: none !important; /* no link underline */
+	color: #fff !important;
+	padding: 8px !important;
+	font-variant: small-caps !important;
+}
+
+.mainMenu a:hover{
+	color: #59d5d8 !important;
+}

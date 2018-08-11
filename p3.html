@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> subpage3 - contact </title>
+	<link rel="stylesheet" type="text/css" href="contact.css">
+	<link rel="stylesheet" type="text/css" href="fprev2.css">
+
+		<!-- bootstrap cdn -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<h1>CS 340 Draft</h1>
+			<h2>web design by Laura</h2>
+		</header>
+
+		<nav>
+			<ul class="mainMenu"> <!--unorder bullet list-->
+				<li><a href="step3c.html">home</a></li>
+				<li><a href="p1.html">Products</a></li>
+				<li><a href="p2.html">Insert/Delete</a></li>
+				<li><a href="p3.html">Search</a></li>
+			</ul>
+		</nav>
+
+		<p id="headerText">
+			This page allows user to search for existing products. There will be filters that I want to setup to narrow closer to a more precise search. 
+		<p><br>
+
+		<p id="headerText">
+			Search for a product in table "Makeup_Product" from mysql document. 
+		<p>
+
+
+		<div>
+    		<input type="text" placeholder="Name...">
+    		<input type="text" placeholder="Brand...">
+    		<input type="text" placeholder="Lifespan (months)...">
+    		<button id"search-button">Search</button>
+		</div> <br>
+   		
+   	<table class "Makeup_Product-table">
+        <tr class="table-title">
+            <th>ID</th>
+            <th>Name</th>
+            <th>Brand</th>
+            <th>Cost</th>
+            <th>Lifespan</th>
+            <th>Color ID</th>
+            <th>Makeup_Type ID</th>
+        </tr>
+        <tr class="example-search">
+            <td>{{automated count}}</td>
+            <td>{{Name}}</td>
+            <td>{{Brand}}</td>
+            <td>{{Cost}}</td>
+            <td>{{Lifespan}}</td>
+            <td>{{Color ID}}</td>
+            <td>{{Makeup_Type ID}}</td>
+        </tr>
+        <tr class="table-contents">
+         	<td>{{automated count}}</td>
+            <td>{{Name}}</td>
+            <td>{{Brand}}</td>
+            <td>{{Cost}}</td>
+            <td>{{Lifespan}}</td>
+            <td>{{Color ID}}</td>
+            <td>{{Makeup_Type ID}}</td>
+        </tr>
+    </table>
+
+	</div>
+
+</body>
+</html>
